@@ -4,74 +4,76 @@
 <head>
   <meta charset="utf-8">
   <title>Style an HTML Table</title>
-  <link href='https://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/lab6_final.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<div>
-		<header>
+	<div id="page-wrapper">
+		<header id="header">
 			<h1>Planetary Fact Sheet</h1>
 		</header>
 		<table id="planets">
-			<tr id="table-title">
+			<tr id="table-title" class="crossing-lines">
 				<th></th>
 				<th>VENUS</th>
 				<th>EARTH</th>
 				<th>MOON</th>
 				<th>MARS</th>
 			</tr>
-			<tr>
-				<td id="images" class="first-col">Images of some Planets</td>
+			<tr class="crossing-lines">
+				<td id="images-r" class="first-col">Images of some Planets</td>
 				<td><img src="assets/venus.gif" alt="photo of planet venus"></td>
 				<td><img src="assets/earth.gif" alt="photo of planet earth"></td>
 				<td><img src="assets/moon.gif" alt="photo of planet moon"></td>
 				<td><img src="assets/mars.gif" alt="photo of planet mars"></td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Mass<span> (10<sup>24</sup>kg)</span></td>
 				<td>4.87</td>
 				<td>5.97</td>
 				<td>0.073</td>
 				<td>0.642</td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Rotation Period<span> (hours)</span></td>
 				<td>-5832.5</td>
 				<td>23.9</td>
 				<td>655.7</td>
 				<td>24.6</td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Length of Day<span> (hours)</span></td>
 				<td>2802.0</td>
 				<td>24.0</td>
 				<td>708.7</td>
 				<td>24.7</td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Distance from Sun<span> (10<sup>6</sup>km)</span></td>
 				<td>108.2</td>
 				<td>149.6</td>
 				<td>0.384&#42;</td>
 				<td>228.0</td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Orbital Period<span> (days)</span></td>
 				<td>224.7</td>
 				<td>365.2</td>
 				<td>27.3</td>
 				<td>687.0</td>
 			</tr>
-			<tr>
+			<tr class="crossing-lines">
 				<td class="first-col">Number of Moons</td>
 				<td>0</td>
 				<td>1</td>
 				<td>0</td>
 				<td>2</td>
 			</tr>
-			<tr>
+			<tr class="cro">
 				<td class="first-col">Global Magnetic Field?</td>
 				<td>No</td>
 				<td>Yes</td>
@@ -82,41 +84,19 @@
 		<section id="main">
 		<h2>Brief Explaination of the Planets</h2>
 			<div id="first">
-				<section>
-					<h3>Mass</h3>
 					<p><strong>Mass</strong> (10<sup>24</sup>kg or 10<sup>21</sup>tons) - This is the mass of the planet in septillion (1 followed by 24 zeros) kilograms or sextillion (1 followed by 21 zeros) tons. Strikly speacking tons are measures of weight, not mass, but are used here to represent the mass of one ton of material under Earth gravity.</p>
-				</section>
-				<section>
-					<h3>Rotation Period</h3>
 					<p><strong>Rotation Period</strong> (hours) - This is the time it takes for the planet to complete one rotation relative to the fixed background stars (not relative to the Sun) in hours. Negative numbers indicate retrograde (backwards relative to the Earth) rotation.</p>
-				</section>
-			</div>
-			<div id="second">
-				<section>
-					<h3>Length of Day</h3>
 					<p><strong>Length of Day</strong> (hours) - The average time in hours for the Sun to move from the noon position in the sky at a point on the equator back to the same position.</p>
-				</section>
-				<section>
-					<h3>Distance from Sun</h3>
+				</div>
+				<div id="second">
 					<p><strong>Distance from Sun</strong> (10<sup>6</sup> km or 10<sup>6</sup> miles) - This is the average distance from the planet to the Sun in millions of kilometers or millions of miles, also known as the semi-major in the orbit at which are elliptical, not perfectly circular, so there is a point from the Sun, the aphelion. The average distance from the Sun is midway between these two values. The average distance from  the Earth to the Sun is defined as 1&#24; For the Moon, the average distance from the Earth is given.</p>
-				</section>
-				<section>
-					<h3>Orbital Inclination</h3>
 					<p><strong>Orbital Inclination</strong> (degrees) - The angle in degrees at which a planets orbit around the Sun is tilted relative to the ecliptic plane. The ecliptic plane is defined as the plane containing the Earth's orbit, so the Earth's inclinaiton is 0.</p>
-				</section>
-			</div>
-			<div id="third">
-				<section>
-					<h3>Number of Moons</h3>
 					<p><strong>Number of Moons</strong> - This gives the number of IAU officially confirmed moons orbiting the planet. New moons are still being discovered.</p>
-				</section>
-				<section>
-					<h3>Global Magnetic Field?</h3>
 					<p><strong>Global Magnetic Field?</strong> - This tells whether the planet has a measurable large-scale magnetic field. Mars and the Moon have localized regional magnetic fields but no global field.</p>
-				</section>
 			</div>
-			<p><strong>Note:</strong> That Venus, Earth, Moon, Mars (as well as Mercury and Pluto) are refers to as "terrestial planets" while Jupiter, Saturn, Uranus, and Neptune are refers to as "gas giants".</p>
-		</section>
+			<div>
+				<p class="para"><strong>Note:</strong> That Venus, Earth, Moon, Mars (as well as Mercury and Pluto) are refers to as "terrestial planets" while Jupiter, Saturn, Uranus, and Neptune are refers to as "gas giants".</p>
+			</div>
 		<footer id="footer">
 			<section id="footer-one">
 				<h4>Contact</h4>
@@ -135,7 +115,7 @@
 					<li><a href="https://github.com/dkriegls">Daniel Krieglstein PhD</a></li>
 				</ul>
 			</section>
-			<p class="last">Design by <a href="https://www.linkedin.com/in/maxwell-onyemaruche-752522230">Maxwell Onyemaruche</a> for <a href="">Maxo-tech</a></p>
+			<p class="last">Design by <a href="https://www.linkedin.com/in/maxwell-onyemaruche-752522230">Maxwell Onyemaruche</a> for <a href="https://github.com/maxo-tech">Maxo-tech</a></p>
 			<p class="end">&copy;2024 Maxo-tech - All Right Reserved</p>
 		</footer>
 	<div>
