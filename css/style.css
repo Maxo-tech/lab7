@@ -13,65 +13,73 @@ body {
 }
 
 #header {
+		font-size: 1.5em;
+		color: #ffffff;
+		text-align: center;
     position: relative;
     margin-top: 20px;
 		margin-bottom: 20px;
     border-radius: 12px 12px 0px 0px;
 		align-content: center;
-		border: 1px solid white;
-}
-
-#header h1 {
-		position: relative;
-		margin-bottom: 30px;
-		font-size: 3em;
-		color: #ffffff;
-		text-align: center;
-	
+		border: 2px solid white;
 }
 
 #planets {
 		border: 2px solid #ffffff;
-		margin-top: 40px;	
+		margin: 40px 0px 20px 0px; 	
 		text-align: center;
 		color: #ffffff;
 }
-/**
-#planets span {
-		color: #000000;
-		font-weight: 550;
-}
-**/
 
-#main {
+#first {
 		text-align: center;
 		color: #ffffff;
 		font-size: 0.8em;
-}
-
-#main #first {
 		border: 2px solid #ffffff;
-		height: 240px;
+		height: 255px;
 		width: 450px;
 		float: left;
 		position: relative;
-		
 }
 
-#main #second {
+#second {
+		text-align: center;
+		color: #ffffff;
+		font-size: 0.8em;
 		border: 2px solid #ffffff;
-		height: 320px;
+		height: 335px;
 		width: 450px;
 		float: right;
 		position: relative;
+		margin: 0px 0px 20px 0px;
 }
 
 .para {
-		margin: 5px 0px 0px 0px;
+		margin: 5px 0px 20px 0px;
 		float: left;
 		width: 450px;
 		position: relative;
-		border: 2px solid yellow;
-	
-	
+		color: yellow;
+		border: 2px solid #ffffff;
+}
+
+#footer {
+		background-color: #bbbbbb;
+		height: 340px;
+		clear: both;
+		margin: 20px 0px 0px 0px;
+		text-align: center;
+		color: black;
+}
+
+#footer ul {
+		list-style-type: none;
+		text-decoration: none;
+		margin:0;
+		padding: 0;
+}
+
+#footer li a:hover {
+		background-color: rgb(118, 87, 254);
+		color: white;
 }
